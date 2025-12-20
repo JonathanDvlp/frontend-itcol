@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: dockerfile
+    image: frontend-nginx:test
+    container_name: frontend-test
+    ports:
+      - "8080:80"
+    restart: unless-stopped

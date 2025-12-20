@@ -1,0 +1,62 @@
+<div 
+  class="w-full min-h-[100svh] bg-cover bg-center bg-no-repeat"
+  style="background-image: url('/assets/imagenes/fondo3.png');"
+>
+
+  <!-- ✅ Ahora usamos GRID RESPONSIVE -->
+  <section class="w-full min-h-[100svh] grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+
+    <!-- 🔹 Bloque 1 -->
+    <div 
+      routerLink="/ti"
+      class="relative flex flex-col items-center justify-start
+             text-top p-5 rounded-2xl min-h-[250px]
+             border border-gray-200 cursor-pointer 
+             bg-[url('/assets/imagenes/it.jpg')] bg-cover bg-center
+             transition-transform duration-300 ease-in-out
+             hover:scale-105 hover:shadow-xl overflow-hidden">
+
+      <!-- 🔹 Franja gris -->
+      <div class="absolute top-0 left-0 right-0 h-28 bg-gradient-to-b from-gray-200/90 to-transparent z-0"></div>
+
+      <p class="relative z-10 font-montserrat text-lg text-black font-light max-w-md mt-6 text-center">
+        Soluciones integrales en TI: desarrollo de software, infraestructura y soporte técnico.
+      </p>
+    </div>
+
+    <!-- 🔹 Bloque 2 -->
+    <div 
+      routerLink="/electronica"
+      class="relative flex flex-col items-center justify-start
+             text-center p-5 rounded-2xl min-h-[250px]
+             border border-gray-200 cursor-pointer 
+             bg-[url('/assets/imagenes/electronica.jpg')] bg-cover bg-center
+             transition-transform duration-300 ease-in-out
+             hover:scale-105 hover:shadow-xl overflow-hidden">
+
+      <div class="absolute top-0 left-0 right-0 h-28 bg-gradient-to-b from-gray-200/90 to-transparent z-0"></div>
+
+      <h1 class="relative z-10 font-montserrat text-lg text-black font-light max-w-md mt-6">
+        Diseño, ensamblaje y mantenimiento a tarjetas electrónicas.
+      </h1>
+    </div>
+
+    <!-- 🔹 Bloque 3 -->
+    <div 
+      routerLink="/biomedica"
+      class="relative flex flex-col items-center justify-start
+             text-center p-5 rounded-2xl min-h-[250px]
+             border border-gray-200 cursor-pointer 
+             bg-[url('/assets/imagenes/biomedica.jpg')] bg-cover bg-center
+             transition-transform duration-300 ease-in-out
+             hover:scale-105 hover:shadow-xl overflow-hidden">
+
+      <div class="absolute top-0 left-0 right-0 h-28 bg-gradient-to-b from-gray-200/90 to-transparent z-0"></div>
+
+      <h2 class="relative z-10 font-montserrat text-lg text-black font-light max-w-md mt-6">
+        Mantenimiento Biomédico
+      </h2>
+    </div>
+
+  </section>
+</div>
