@@ -1,12 +1,8 @@
-version: "3.9"
-
 services:
   frontend:
-    build:
-      context: .
-      dockerfile: dockerfile
-    image: frontend-nginx:test
-    container_name: frontend-test
+    image: ghcr.io/jonathandvlp/frontend-itcol/frontend:latest
+    container_name: frontend
     ports:
-      - "8080:80"
+      - "80:80"
     restart: unless-stopped
+

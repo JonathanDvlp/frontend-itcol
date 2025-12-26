@@ -1,0 +1,69 @@
+<header class="w-full bg-gray-100/80 backdrop-blur-md border-b border-gray-200 fixed top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+
+    <!-- Logo -->
+    <a
+      routerLink="/inicio"
+      class="flex items-center gap-2 font-semibold text-gray-900
+             transition-transform duration-200 active:scale-95"
+    >
+      <img
+        src="assets/imagenes/logo.png"
+        alt="Logo"
+        class="h-12 w-auto"
+      />
+    </a>
+
+    <!-- Navegación -->
+    <nav class="hidden md:flex items-center gap-10 text-[15px] font-medium text-gray-700">
+
+      <a
+        routerLink="/inicio"
+        (click)="scrollToSection('hero')"
+        class="nav-apple"
+      >
+        Inicio
+      </a>
+
+      <a
+      routerLink=""  
+      (click)="scrollToSection('problemas')"
+        class="nav-apple"
+      >
+        Procesos
+      </a>
+
+      <a
+      routerLink=""    
+      (click)="scrollToSection('soluciones')"
+        class="nav-apple"
+      >
+        Nuestras Soluciones
+      </a>
+
+      <a
+      routerLink=""    
+      (click)="scrollToSection('porque-elegirnos')"
+        class="nav-apple"
+      >
+        ¿Por qué elegirnos?
+      </a>
+
+      <a
+        
+      routerLink="/formulario"
+        class="nav-apple"
+      >
+        Contacto
+      </a>
+
+      <a
+        routerLink="/admin"
+        class="nav-apple"
+      >
+        Colaboradores
+      </a>
+
+    </nav>
+  </div>
+</header>

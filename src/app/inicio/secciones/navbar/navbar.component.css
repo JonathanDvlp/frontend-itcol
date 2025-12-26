@@ -1,0 +1,36 @@
+.nav-apple {
+  position: relative;
+  padding: 4px 2px;
+  color: #374151; /* gray-700 */
+  letter-spacing: 0.01em;
+  transition:
+    color 0.2s ease,
+    transform 0.15s ease;
+}
+
+.nav-apple:hover {
+  color: #111827; /* gray-900 */
+}
+
+/* Subrayado animado estilo Apple */
+.nav-apple::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background-color: #111827;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+.nav-apple:hover::after {
+  transform: scaleX(1);
+}
+
+/* Click sutil */
+.nav-apple:active {
+  transform: scale(0.96);
+}
