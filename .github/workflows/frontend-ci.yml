@@ -47,6 +47,9 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/jonathandvlp/frontend-itcol/frontend:latest
+          tags: |
+           ghcr.io/jonathandvlp/frontend-itcol/frontend:latest
+           ghcr.io/jonathandvlp/frontend-itcol/frontend:${{ github.sha }}
           platforms: linux/amd64,linux/arm64
+
  
