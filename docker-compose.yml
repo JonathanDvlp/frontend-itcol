@@ -1,8 +1,7 @@
 services:
   frontend:
-    image: ghcr.io/jonathandvlp/frontend-itcol/frontend:latest
-    container_name: frontend
+    build: .
+    image: frontend-test
+    container_name: frontend-test
     ports:
-      - "80:80"
-    restart: unless-stopped
-
+      - "8080:80"
